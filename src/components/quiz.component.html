@@ -15,7 +15,7 @@
                         <h4>{{quiz.place_of_birth}}</h4>
                         <h3 class="title"><strong>Quiz</strong></h3>
 
-                        <div *ngIf="show; else elseBlock">
+                        <div *ngIf="!show; else elseBlock"> <!-- id doesn't work change to ngif = show -->
                             <div class="q1">
                                 <h3 class="title"><strong>What is birthdate of {{quiz.name}}?</strong></h3>
                                 <form>
